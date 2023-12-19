@@ -31,10 +31,7 @@ jobs:
 
       # 리액트 애플리케이션 빌드
       - name: react build and deploy
-        run: |
-          export PORT=3000
-          npm run build
-          npm start
+        run: npm run build
 
       # 올릴 파일을 디렉터리에 모아서 보낼 것이므로 디렉터리를 생성함
       - name: Make Directory for deliver
