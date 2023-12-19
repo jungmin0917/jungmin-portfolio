@@ -12,7 +12,7 @@ NGINX_DIR="/var/www/html"
 sudo cp -r "$BUILD_DIR"/* "$NGINX_DIR"
 
 # 정적 파일들에 권한 부여
-sudo chown -R nginx:nginx /var/www/html
+sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 
 echo "> 리액트 애플리케이션 정적 파일을 nginx 디렉터리로 복사 완료"
