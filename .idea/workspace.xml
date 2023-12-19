@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e1de8b6-d7bb-4991-ad49-212ee83bf820" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.cd.prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jungmin-portfolio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appspec.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6e1de8b6-d7bb-4991-ad49-212ee83bf820" name="변경" comment="CI/CD 파이프라인 구축 중">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.cd.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.cd.prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +63,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702947156176</updated>
-      <workItem from="1702947157346" duration="1557000" />
+      <workItem from="1702947157346" duration="1720000" />
     </task>
+    <task id="LOCAL-00001" summary="CI/CD 파이프라인 구축 중">
+      <option name="closed" value="true" />
+      <created>1702955238890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702955238890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CI/CD 파이프라인 구축 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="CI/CD 파이프라인 구축 중" />
   </component>
 </project>

@@ -47,7 +47,7 @@ jobs:
 
       # 빌드한 파일을 디렉터리로 복사
       - name: Copy build
-        run: cp build ./deploy
+        run: cp -r build ./deploy
 
       # S3에 저장할 파일을 모은 디렉터리를 zip 파일로 압축
       - name: Make zip file
