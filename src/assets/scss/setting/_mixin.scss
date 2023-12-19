@@ -1,0 +1,8 @@
+/* 여러 스타일을 묶어놓은 재사용 가능한 코드 블록 */
+
+@mixin position-fixed{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
