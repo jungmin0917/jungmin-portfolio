@@ -1,0 +1,70 @@
+name: Front Deployment
+
+# trigger가 되길 바라는 action을 입력함. push / pull_request가 있음
+# main 브랜치에 push가 되면 actions가 실행되도록 함
+on:
+  push:
+    branches:
+      - main
+
+# 위의 이벤트가 트리거되면 실행할 actions의 목록
+jobs:
+  build:
+    name: react build & deploy
+    # runner가 실행될 환경을 지정함
+    runs-on: ubuntu-latest
+
+    # name은 단계별로 실행되는 액션들의 설명을 담은 것으로, 나중에 github action에서 workflow에 해당 이름으로 표시됨
+    # uses 키워드로 Action을 불러올 수 있음
+    steps:
+      # 레포지토리에 접근하여 CI서버로 코드를 내려받는 과정
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # node version 확인
+      - name: Check Node v
+        run: node -v
+
+      # 의존 파일 설치
+      - name: install dependencies
+        run: npm install
+
+      # 리액트 애플리케이션 빌드
+      - name: react build
+        run: npm run build
+
+      # 올릴 파일을 디렉터리에 모아서 보낼 것이므로 디렉터리를 생성함
+      - name: Make Directory for deliver
+        run: mkdir deploy
+
+      # scripts 내 파일을 디렉터리로 복사
+      - name: Copy script
+        run: cp ./scripts/*.sh ./deploy
+
+      # appspec.yml 파일을 디렉터리로 복사
+      - name: Copy appspec.yml
+        run: cp appspec.yml ./deploy
+
+      # 빌드한 파일을 디렉터리로 복사
+      - name: Copy build
+        run: cp build ./deploy
+
+      # S3에 저장할 파일을 모은 디렉터리를 zip 파일로 압축
+      - name: Make zip file
+        run: zip -r ./jungmin.zip ./deploy
+        shell: bash
+
+      # S3에 배포할 파일들 업로드
+      - name: Upload to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: aws s3 cp --region ap-northeast-2 ./jungmin.zip s3://bucket-jungmin-githubactions/
+
+      # 배포
+      - name: Deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run:
+          aws deploy create-deployment --application-name CodeDeploy --deployment-group-name jungmin --file-exists-behavior OVERWRITE --s3-location bucket=bucket-jungmin-githubactions,bundleType=zip,key=jungmin.zip --region ap-northeast-2
