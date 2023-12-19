@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffb53c31-001d-4699-9ed8-eccced7fc09e" name="변경" comment="포트폴리오 사이트 제작 시작 (레퍼런스: https://webstoryboy.co.kr/1934)">
-      <change afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/HomeView.js" afterDir="false" />
+    <list default="true" id="ffb53c31-001d-4699-9ed8-eccced7fc09e" name="변경" comment="개인 포트폴리오 사이트 - 리액트 기본 디렉터리 구조 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomeView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +57,9 @@
       <recent name="C:\jungmin\intellij_workspace\jungmin-portfolio\src\assets\img" />
       <recent name="C:\jungmin\intellij_workspace\jungmin-portfolio\public" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\jungmin\intellij_workspace\jungmin-portfolio\src\pages" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
@@ -87,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702956221520</updated>
-      <workItem from="1702956222694" duration="10540000" />
+      <workItem from="1702956222694" duration="10774000" />
     </task>
     <task id="LOCAL-00001" summary="CI/CD 파이프라인 구축 중">
       <option name="closed" value="true" />
@@ -209,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702968231693</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="개인 포트폴리오 사이트 - 리액트 기본 디렉터리 구조 작성">
+      <option name="closed" value="true" />
+      <created>1702970630343</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702970630343</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +221,7 @@
     <MESSAGE value="CI/CD 파이프라인 구축 중" />
     <MESSAGE value="CI/CD 파이프라인 구축 완료" />
     <MESSAGE value="포트폴리오 사이트 제작 시작 (레퍼런스: https://webstoryboy.co.kr/1934)" />
-    <option name="LAST_COMMIT_MESSAGE" value="포트폴리오 사이트 제작 시작 (레퍼런스: https://webstoryboy.co.kr/1934)" />
+    <MESSAGE value="개인 포트폴리오 사이트 - 리액트 기본 디렉터리 구조 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="개인 포트폴리오 사이트 - 리액트 기본 디렉터리 구조 작성" />
   </component>
 </project>
