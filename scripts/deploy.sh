@@ -9,6 +9,6 @@ BUILD_DIR="/home/ubuntu/app/jungmin/build"
 NGINX_DIR="/var/www/html"
 
 # 정적 파일 복사
-cp -r "$BUILD_DIR"/* "$NGINX_DIR"
+sudo cp -r "$BUILD_DIR"/* "$NGINX_DIR"
 
 echo "> 리액트 애플리케이션 정적 파일을 nginx 디렉터리로 복사 완료"
