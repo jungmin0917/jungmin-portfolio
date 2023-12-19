@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffb53c31-001d-4699-9ed8-eccced7fc09e" name="변경" comment="CI/CD 파이프라인 구축 중">
+    <list default="true" id="ffb53c31-001d-4699-9ed8-eccced7fc09e" name="변경" comment="CI/CD 파이프라인 구축 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702956221520</updated>
-      <workItem from="1702956222694" duration="7690000" />
+      <workItem from="1702956222694" duration="8183000" />
     </task>
     <task id="LOCAL-00001" summary="CI/CD 파이프라인 구축 중">
       <option name="closed" value="true" />
@@ -149,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702964659721</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CI/CD 파이프라인 구축 완료">
+      <option name="closed" value="true" />
+      <created>1702967524407</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702967524407</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +168,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CI/CD 파이프라인 구축 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="CI/CD 파이프라인 구축 중" />
+    <MESSAGE value="CI/CD 파이프라인 구축 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="CI/CD 파이프라인 구축 완료" />
   </component>
 </project>
